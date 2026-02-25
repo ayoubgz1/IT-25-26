@@ -10,6 +10,7 @@ app.get("/weather", async (req, res) => {
   if (longitude < -180 || longitude > 180 || latitude < -90 || latitude > 90) {
     console.log("invalid city ");
     res.status(500).json({ message: "invalid city " });
+    return;
   }
 
   try {
@@ -86,3 +87,4 @@ app.get("/weather", async (req, res) => {
 app.listen(3000, () => {
   console.log("i am listenner Port 3000");
 });
+
