@@ -11,11 +11,11 @@ function App() {
 const [open, setOpen] =useState(false);
 const[cursorText,setCursorText]=useState('MAWAKIT')
 const [timeList, setTime] = useState({
-    Fajr:'00:00',
-    Dhuhr:'00:00',
-    Asr:'00:00',
-    Maghrib:'00:00',
-    Isha:'00:00',
+    Fajr:'4:30',
+    Dhuhr:'12:45',
+    Asr:'16:26',
+    Maghrib:'19:27',
+    Isha:'20:55',
 });
 
 
